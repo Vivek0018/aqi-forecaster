@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-_%tkd18&z^8ksybc$ya^#grv@jc*uvova9_u*d(=(!2yh2b(j*
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app','now.sh','127.0.0.1','localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,20 +76,20 @@ WSGI_APPLICATION = 'aqi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'railway',
-        'USER': 'postgres',
-        'PASSWORD': '11d1g46EDfafAc6g1563D-*6dcfEa3g5',
-        'HOST': 'monorail.proxy.rlwy.net',
-        'PORT': '29092',
-    }
-}
-
 # DATABASES = {
-#     'defalut' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'railway',
+#         'USER': 'postgres',
+#         'PASSWORD': '11d1g46EDfafAc6g1563D-*6dcfEa3g5',
+#         'HOST': 'monorail.proxy.rlwy.net',
+#         'PORT': '29092',
+#     }
 # }
+
+DATABASES = {
+    'defalut' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
