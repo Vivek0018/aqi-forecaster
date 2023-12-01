@@ -19,5 +19,5 @@ from . import views
 
 urlpatterns = [
     path('', views.getAQI),
-    # path('data/', views.demo)
+    path('data/', views.demo)
 ]
