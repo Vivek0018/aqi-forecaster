@@ -142,6 +142,8 @@ def getForecastData(data):
         for i in data[0]:
             if str(data[0][i][0]) != 'nan':
                 presentDayData[i] = data[0][i][0]
+        
+        # print(predicted_data)
 
 
         finalOut = {
