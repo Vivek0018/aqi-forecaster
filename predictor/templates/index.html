@@ -1,14 +1,15 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Air Quality Index Predictor</title>
-    <link rel="stylesheet" href="https://Vivek0018.github.io/Files.Animerulz/static/styles/style.css"> 
+    <link rel="stylesheet" href="{% static '/styles/style.css' %}"> 
     <style>
         .wrapper{
             height: 700px;
-            background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("https://Vivek0018.github.io/Files.Animerulz/static/images/power-plant-6698838_1920.jpg");
+            background: linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url("{% static '/images/power-plant-6698838_1920.jpg'%}");
             background-position: center bottom;
             background-size: 100% 100%;
             background-repeat: no-repeat;
@@ -19,7 +20,7 @@
     <header>
         <div class="header-data max-1500">
             <div class="logo-container">
-                <img src="https://Vivek0018.github.io/Files.Animerulz/static/images/AQILogo.png" alt="AQI" class="logo">
+                <img src="{% static '/images/AQILogo.png' %}" alt="AQI" class="logo">
             </div>
         </div>
     </header>
@@ -82,7 +83,7 @@
                             <div class="e-a-a-a-a e-1" onclick="fetchDataTrigger('Delhi')">
                                 <div class="e-city-data">
                                     <div class="e-img-container">
-                                        <img src="https://Vivek0018.github.io/Files.Animerulz/static/images/DelhiImg.jpg" alt="Delhi">
+                                        <img src="{% static '/images/DelhiImg.jpg' %}" alt="Delhi">
                                     </div>
                                     <div class="e-city-head margin-10">
                                         <h4 class="large white-txt">Delhi</h4>
@@ -98,7 +99,7 @@
                             <div class="e-a-a-a-a e-2" onclick="fetchDataTrigger('New York')">
                                 <div class="e-city-data">
                                     <div class="e-img-container">
-                                        <img src="https://Vivek0018.github.io/Files.Animerulz/static/images/NewYorkImg.jpeg" alt="NewYork">
+                                        <img src="{% static 'images/NewYorkImg.jpeg' %}" alt="NewYork">
                                     </div>
                                     <div class="e-city-head margin-10">
                                         <h4 class="large white-txt">New York</h4>
@@ -114,7 +115,7 @@
                             <div class="e-a-a-a-a e-3" onclick="fetchDataTrigger('Tokyo')">
                                 <div class="e-city-data">
                                     <div class="e-img-container">
-                                        <img src="https://Vivek0018.github.io/Files.Animerulz/static/images/TokyoImg.jpeg" alt="Tokyo">
+                                        <img src="{% static '/images/TokyoImg.jpeg' %}" alt="Tokyo">
                                     </div>
                                     <div class="e-city-head margin-10">
                                         <h4 class="large white-txt">Tokyo</h4>
@@ -226,7 +227,7 @@
                     </div>
                     <div class="img-des">
                         <div class="data-img">
-                            <img src="https://Vivek0018.github.io/Files.Animerulz/static/images/aqi_mini.webp" alt="AQI Ranges">
+                            <img src="{% static '/images/aqi_mini.webp' %}" alt="AQI Ranges">
                         </div>
                     </div>
                 </div>
@@ -275,7 +276,7 @@
             <div class="c-a">
                 <div class="c-a-a">
                     <div class="c-a-a-a logo-container">
-                        <img src="https://Vivek0018.github.io/Files.Animerulz/static/images/AQILogo.png" alt="AQI" class="logo">
+                        <img src="{% static '/images/AQILogo.png' %}" alt="AQI" class="logo">
                     </div>
                     <div class="c-a-z">
                         <span class="small">© AQI All rights reserved</span>
@@ -284,6 +285,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://Vivek0018.github.io/Files.Animerulz/static/scripts/script.js"></script>
+    <script src="{%static 'scripts/script.js'%}"></script>
 </body>
 </html>
