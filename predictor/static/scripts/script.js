@@ -19,9 +19,10 @@ form.addEventListener("submit", (event) => {
     //to set loading animation
     setLoaders(resultElement);
     input.value = ""
-    fetch("data/", {
+    fetch("/", {
         method : 'POST',
         header : {
+            'request-type' : 'data',
             "Content-Type" : "application/x-www-form-urlencoded"
         },
         body : new URLSearchParams({
