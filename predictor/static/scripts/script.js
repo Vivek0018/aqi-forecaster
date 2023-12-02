@@ -20,7 +20,7 @@ form.addEventListener("submit", (event) => {
     //to set loading animation
     setLoaders(resultElement);
     input.value = ""
-    fetch("/", {
+    fetch("", {
         method : 'POST',
         header : {
             'request-type' : 'data',
@@ -47,7 +47,7 @@ function fetchDataTrigger(searchKey){
     resultElement.scrollIntoView({behavior : "smooth"});
     //to set loading animation
     setLoaders(resultElement);
-    fetch("/", {
+    fetch("", {
         method : 'POST',
         header : {
             "Content-Type" : "application/x-www-form-urlencoded"
