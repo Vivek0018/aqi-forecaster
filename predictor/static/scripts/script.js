@@ -32,7 +32,7 @@ form.addEventListener("submit", (event) => {
     })
     .then(response => response.json())
     .then(data => {
-        console.log(data, searchKey);
+        console.log(data, searchKey );
         renderData(data, resultElement, searchKey)
     })
 })
