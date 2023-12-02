@@ -89,9 +89,9 @@ WSGI_APPLICATION = 'aqi.wsgi.application'
 #     }
 # }
 
-# DATABASES = {
-#     'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
-# }
+DATABASES = {
+    'default' : dj_database_url.parse(os.environ.get('DATABASE_URL'))
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -127,7 +127,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-STATIC_URL = 'predictor/static'
+STATIC_URL = 'predictor/static/'
 MEDIA_URL = 'media/'
 
 # Default primary key field type
