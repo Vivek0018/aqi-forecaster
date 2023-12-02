@@ -6,6 +6,7 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const searchKey = input.value.trim();
+    console.log(searchKey);
     if (searchKey.length === 0)
         return
 
