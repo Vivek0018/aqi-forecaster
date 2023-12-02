@@ -4,7 +4,7 @@ from django.http import JsonResponse
 
 # Create your views here.
 def getAQI(request):
-    if(request.headers.get('request-type') == 'data'):
+    if(request.method == 'POST'):
         searchKey = request.POST.get("searchKey")
         #get the historical data of the city
         hist = data.getCityData(city_name=searchKey)

@@ -47,7 +47,7 @@ function fetchDataTrigger(searchKey){
     resultElement.scrollIntoView({behavior : "smooth"});
     //to set loading animation
     setLoaders(resultElement);
-    fetch("data/", {
+    fetch("/", {
         method : 'POST',
         header : {
             "Content-Type" : "application/x-www-form-urlencoded"
